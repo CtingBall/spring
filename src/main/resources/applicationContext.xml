@@ -22,4 +22,7 @@
     <bean id="userService" class="com.eeee.itheima.Service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
     </bean>
+    <bean id="Bean1" class="com.eeee.pojo.Bean1" scope="prototype">
+
+    </bean>
 </beans>
