@@ -2,27 +2,28 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+               http://www.springframework.org/schema/beans/spring-beans.xsd">
+
     <!-- 将指定类配置给Spring，让Spring创建HelloSpring对象的实例 -->
-    <bean id="eeee" class="com.eeee.pojo.HelloSpring">
-        <property name="userName" value="邱均航" />
-    </bean>
-    <bean id="user" class="com.eeee.pojo.User">
-        <constructor-arg name="id" value="19"></constructor-arg>
-        <constructor-arg name="username" value="qjh"></constructor-arg>
-        <constructor-arg name="password" value="123456"></constructor-arg>
-    </bean>
-    <bean id="user2" class="com.eeee.pojo.User">
-        <property name="id" value="19"></property>
-        <property name="username" value="qjh"></property>
-        <property name="password" value="123456"></property>
-    </bean>
+<!--    <bean id="eeee" class="com.eeee.pojo.HelloSpring">-->
+<!--        <property name="userName" value="邱均航" />-->
+<!--    </bean>-->
+<!--    <bean id="user" class="com.eeee.pojo.User">-->
+<!--        <constructor-arg name="id" value="19"></constructor-arg>-->
+<!--        <constructor-arg name="username" value="qjh"></constructor-arg>-->
+<!--        <constructor-arg name="password" value="123456"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="user2" class="com.eeee.pojo.User">-->
+<!--        <property name="id" value="19"></property>-->
+<!--        <property name="username" value="qjh"></property>-->
+<!--        <property name="password" value="123456"></property>-->
+<!--    </bean>-->
 
-    <bean id="userDao" class="com.eeee.itheima.Dao.impl.UserDaoImpl"></bean>
-    <bean id="userService" class="com.eeee.itheima.Service.impl.UserServiceImpl">
-        <property name="userDao" ref="userDao"></property>
-    </bean>
-    <bean id="Bean1" class="com.eeee.pojo.Bean1" scope="prototype">
+<!--    <bean id="userDao" class="com.eeee.itheima.Dao.impl.UserDaoImpl"></bean>-->
+<!--    <bean id="userService" class="com.eeee.itheima.Service.impl.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--    </bean>-->
+<!--    <bean id="Bean1" class="com.eeee.pojo.Bean1" scope="prototype">-->
 
-    </bean>
+<!--    </bean>-->
 </beans>
